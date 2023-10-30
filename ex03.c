@@ -6,17 +6,20 @@ int main()
 {
     setlocale(LC_ALL, "");
 
+    int numero1, numero2;
+    char operacao[2];
+
     printf("====================================\n");
     printf("Calculadora Simples\n");
     printf("====================================\n");
-    int numero1, numero2;
-    char operacao[2];
-    printf("Digite o número 1: ");
+    printf("Digite um número: ");
     scanf("%d", &numero1);
-    printf("Digite o número 2: ");
+    printf("Digite outro número: ");
     scanf("%d", &numero2);
-    printf("Escolha a operação:\n Soma [ + ] - Subtração [ - ] - Produto [ x ] - Divisão [ / ]: ");
+    printf("====================================\n");
+    printf("Escolha a operação:\nSoma [ + ]\nSubtração [ - ]\nProduto [ x ]\nDivisão [ / ]: ");
     scanf("%s", operacao);
+    printf("====================================\n");
 
     if (strcmp(operacao, "+") == 0)
     {
@@ -41,7 +44,7 @@ int main()
     }
     else
     {
-        printf("Operacao inválida!");
+        printf("Operação inválida!");
     }
     return 0;
 }
