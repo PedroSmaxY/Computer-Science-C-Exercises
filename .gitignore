@@ -38,6 +38,7 @@
 
 # Debug files
 *.dSYM/
+*.output/
 *.su
 *.idb
 *.pdb
