@@ -9,11 +9,11 @@ int main()
 
     while (continuar == 'S' || continuar == 's')
     {
-        printf("\nDigite o número um: ");
+        printf("\nDigite o nÃºmero um: ");
         scanf("%d", &numeroUm);
-        printf("\nDigite o número dois: ");
+        printf("\nDigite o nÃºmero dois: ");
         scanf("%d", &numeroDois);
-        printf("\nDigite o número três: ");
+        printf("\nDigite o nÃºmero trÃªs: ");
         scanf("%d", &numeroTres);
 
         menorNumero = numeroUm;
@@ -35,8 +35,8 @@ int main()
         {
             menorNumero = numeroTres;
         }
-        printf("\no número maior é: %d", maiorNumero);
-        printf("\no número menor é: %d", menorNumero);
+        printf("\no nÃºmero maior Ã©: %d", maiorNumero);
+        printf("\no nÃºmero menor Ã©: %d", menorNumero);
 
         maiorNumero = 0;
         menorNumero = 0;

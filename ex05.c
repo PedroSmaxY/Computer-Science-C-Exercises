@@ -11,12 +11,12 @@ int main()
     while (verdadeiro != 0)
     {
         printf("Escolha sua Disciplina\n");
-        printf("[1] - Cálculo de uma Variável\n[2] - Bases de Programação\n");
-        printf("[3] - Modelagem de Novos Negócios\n[4] - Paradigmas de Linguagens de Programação\n");
+        printf("[1] - Cï¿½lculo de uma VariÃ¡vel\n[2] - Bases de ProgramaÃ§Ã£o\n");
+        printf("[3] - Modelagem de Novos NegÃ³cios\n[4] - Paradigmas de Linguagens de ProgramaÃ§Ã£o\n");
         printf("Qual a sua escolha? ");
         scanf("%d", &escolha);
 
-        printf("Digite sua média: ");
+        printf("Digite sua mÃ©dia: ");
         scanf("%f", &media);
         total += media;
         contador++;
@@ -40,7 +40,7 @@ int main()
     if (contador > 0)
     {
         float mediaFinal = total / contador;
-        printf("Média das notas: %.2f\n", mediaFinal);
+        printf("MÃ©dia das notas: %.2f\n", mediaFinal);
     }
 
     return 0;

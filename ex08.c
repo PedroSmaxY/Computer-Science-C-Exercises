@@ -9,16 +9,16 @@ int main()
 
     while (continuar == 'S' || continuar == 's')
     {
-        printf("\nDigite um n˙mero: ");
+        printf("\nDigite um n√∫mero: ");
         scanf("%d", &numero);
 
         if (numero % 2 == 0)
         {
-            printf("\nO n˙mero %d È Par!\n", numero);
+            printf("\nO n√∫mero %d √© Par!\n", numero);
         }
         else
         {
-            printf("\nO n˙mero %d È Õmpar!\n", numero);
+            printf("\nO n√∫mero %d √© √çmpar!\n", numero);
         }
 
         printf("\nQuer continuar? [S/N]: ");

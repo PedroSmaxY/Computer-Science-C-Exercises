@@ -15,7 +15,7 @@ int main()
         scanf("%d", &numeroDois);
 
         printf("Escolha a Operação:\n");
-        printf("Soma [ + ]\nSubtração [ - ]\nProduto[ * ]\nDivisão [ / ]: ");
+        printf("Soma [ + ]\nSubtração [ - ]\nProduto [ * ]\nDivisão [ / ]: ");
         scanf(" %c", &operacao);
 
         switch (operacao)

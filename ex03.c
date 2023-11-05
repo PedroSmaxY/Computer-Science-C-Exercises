@@ -12,12 +12,12 @@ int main()
     printf("====================================\n");
     printf("Calculadora Simples\n");
     printf("====================================\n");
-    printf("Digite um n˙mero: ");
+    printf("Digite um n√∫mero: ");
     scanf("%d", &numero1);
-    printf("Digite outro n˙mero: ");
+    printf("Digite outro n√∫mero: ");
     scanf("%d", &numero2);
     printf("====================================\n");
-    printf("Escolha a operaÁ„o:\nSoma [ + ]\nSubtraÁ„o [ - ]\nProduto [ x ]\nDivis„o [ / ]: ");
+    printf("Escolha a opera√ß√£o:\nSoma [ + ]\nSubtra√ß√£o [ - ]\nProduto [ x ]\nDivis√£o [ / ]: ");
     scanf("%s", operacao);
     printf("====================================\n");
 
@@ -37,14 +37,14 @@ int main()
     {
         if (numero2 == 0)
         {
-            printf("Erro: Divis„o por zero!\n");
+            printf("Erro: Divis√£o por zero!\n");
             return 0;
         }
         printf("%d / %d = %d", numero1, numero2, numero1 / numero2);
     }
     else
     {
-        printf("OperaÁ„o inv·lida!");
+        printf("Opera√ß√£o inv√°lida!");
     }
     return 0;
 }
