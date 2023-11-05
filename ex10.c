@@ -15,7 +15,7 @@ int main()
         scanf("%d", &numeroDois);
 
         printf("Escolha a Operação:\n");
-        printf("Soma [ + ]\nSubtração [ - ]\nProduto [ * ]\nDivisão [ / ]: ");
+        printf("Soma [ + ]\nSubtração [ - ]\nProduto [ x ]\nDivisão [ / ]: ");
         scanf(" %c", &operacao);
 
         switch (operacao)
@@ -26,7 +26,7 @@ int main()
         case '-':
             printf("\n%d - %d = %d", numeroUm, numeroDois, numeroUm - numeroDois);
             break;
-        case '*':
+        case 'x':
             printf("\n%d x %d = %d", numeroUm, numeroDois, numeroUm * numeroDois);
             break;
         case '/':
@@ -40,6 +40,9 @@ int main()
                 printf("\n%d / %d = %d", numeroUm, numeroDois, numeroUm / numeroDois);
             }
             break;
+        default:
+            printf("Digite uma opção válida!");
+            continue;
         }
         printf("\nQuer continuar? [S/N]: ");
         scanf(" %c", &continuar);
