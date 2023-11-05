@@ -44,6 +44,6 @@ int main()
         printf("\nQuer continuar? [S/N]: ");
         scanf(" %c", &continuar);
     }
-    printf("\nFim do programa");
+    printf("\nFim do programa\n");
     return 0;
 }
