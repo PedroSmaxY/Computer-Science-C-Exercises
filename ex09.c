@@ -27,7 +27,7 @@ int main()
         {
             menorNumero = numeroDois;
         }
-        if(numeroTres > maiorNumero)
+        if (numeroTres > maiorNumero)
         {
             maiorNumero = numeroTres;
         }
@@ -35,8 +35,8 @@ int main()
         {
             menorNumero = numeroTres;
         }
-        printf("\no número maior é: %d", maiorNumero);
-        printf("\no número menor é: %d", menorNumero);
+        printf("\no maior número é: %d", maiorNumero);
+        printf("\no menor número é: %d", menorNumero);
 
         maiorNumero = 0;
         menorNumero = 0;
