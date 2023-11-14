@@ -25,7 +25,7 @@ int main()
     else
     {
         printf("\nDigite: ");
-        scanf(" %s", sexoString);
+        scanf("%s", sexoString);
     }
     
 
