@@ -34,28 +34,6 @@ int main()
 
     switch (estadoCivil)
     {
-<<<<<<< HEAD
-        case 1:
-            printf("\nDigite o tempo de relacionamento: ");
-            scanf("%d", &tempoDeRelacionamento);
-            strcpy(estadoCivilString, "CASADO");
-            break;
-        case 2:
-            strcpy(estadoCivilString, "SOLTEIRO");
-            break;
-        case 3:    
-            strcpy(estadoCivilString, "SEPARADO");
-            break;
-        case 4:
-            strcpy(estadoCivilString, "DIVORCIADO");
-            break;
-        case 5:
-            strcpy(estadoCivilString, "VIÚVO");
-            break;
-        default:
-            printf("Opção invalida");
-            return 0;
-=======
     case 1:
         printf("\nDigite o tempo de relacionamento: ");
         scanf("%d", &tempoDeRelacionamento);
@@ -74,9 +52,8 @@ int main()
         strcpy(estadoCivilString, "VIÚVO");
         break;
     default:
-        printf("Opção invalida");
-        break;
->>>>>>> fc5c164 (Fix scanf format specifier in ex19.c)
+        printf("Opção invalida\n");
+        return 0;
     }
 
     if (estadoCivil != 1)
