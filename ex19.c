@@ -54,7 +54,7 @@ int main()
             break;
         default:
             printf("Opção invalida");
-            break;
+            return 0;
     }
     
     if (estadoCivil != 1) 
