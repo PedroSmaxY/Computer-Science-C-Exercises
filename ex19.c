@@ -25,9 +25,8 @@ int main()
     else
     {
         printf("\nDigite: ");
-        scanf("%s", sexoString);
+        scanf(" %s", sexoString);
     }
-    
 
     printf("\nEstado Civil:\nCasado[ 1 ]\nSolteiro[ 2 ]\nSeparado[ 3 ]\nDivorciado [ 4 ]\nViúvo [ 5 ]");
     printf("\nEscolha seu estado Civil: ");
@@ -35,6 +34,7 @@ int main()
 
     switch (estadoCivil)
     {
+<<<<<<< HEAD
         case 1:
             printf("\nDigite o tempo de relacionamento: ");
             scanf("%d", &tempoDeRelacionamento);
@@ -55,9 +55,31 @@ int main()
         default:
             printf("Opção invalida");
             return 0;
+=======
+    case 1:
+        printf("\nDigite o tempo de relacionamento: ");
+        scanf("%d", &tempoDeRelacionamento);
+        strcpy(estadoCivilString, "CASADO");
+        break;
+    case 2:
+        strcpy(estadoCivilString, "SOLTEIRO");
+        break;
+    case 3:
+        strcpy(estadoCivilString, "SEPARADO");
+        break;
+    case 4:
+        strcpy(estadoCivilString, "DIVORCIADO");
+        break;
+    case 5:
+        strcpy(estadoCivilString, "VIÚVO");
+        break;
+    default:
+        printf("Opção invalida");
+        break;
+>>>>>>> fc5c164 (Fix scanf format specifier in ex19.c)
     }
-    
-    if (estadoCivil != 1) 
+
+    if (estadoCivil != 1)
     {
         printf("\nNome: %s\nSexo: %s\nestado cívil: %s", nome, sexoString, estadoCivilString);
     }
