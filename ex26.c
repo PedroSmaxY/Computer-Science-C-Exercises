@@ -23,12 +23,21 @@ int main()
         printf("\nDigite um valor de hora: ");
         scanf("%d", &numero_horas);
         printf("\nEscolha uma conversão:\n[ S ] - segundos\n[ M ] - minutos\n[ H ] - horas");
-        printf("\nDigite sua opção: ");
-        scanf(" %c", &tipo);
+        
+        while(1)
+        {
+            printf("\nDigite sua opção: ");
+            scanf(" %c", &tipo);
+            if (tipo == 's'|| tipo == 'S' || tipo == 'm' || tipo == 'M' || tipo == 'h' || tipo == 'H')
+            {
+                break;
+            }
+            printf("\nValor incorreto!");
+        }
 
         (tipo == 's' || tipo == 'S') ? strcpy(tipoString,"Seg")
         : (tipo == 'm' || tipo == 'M') ? strcpy(tipoString,"Min") 
-        : (tipo == 'h' || tipo == 'H') ? strcpy(tipoString,"hrs")
+        : (tipo == 'h' || tipo == 'H') ? strcpy(tipoString,"Hrs")
         : 0;
 
         printf("\nO resultado da conversão é: %ld %s\n", conversao_hora(numero_horas, tipo), tipoString);
