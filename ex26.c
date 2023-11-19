@@ -13,12 +13,12 @@ long int conversao_hora(int numero_horas, char tipo)
 
 int main()
 {
+    setlocale(LC_ALL, "");
     int numero_horas;
     char tipo, tipoString[10], continuar;
     
     while(1)
     {
-        setlocale(LC_ALL, "");
 
         printf("\nDigite um valor de hora: ");
         scanf("%d", &numero_horas);
