@@ -22,10 +22,10 @@ int main()
 
         printf("\nDigite um valor de hora: ");
         scanf("%d", &numero_horas);
-        printf("\nEscolha uma conversão:\n[ S ] - segundos\n[ M ] - minutos\n[ H ] - horas");
         
         while(1)
         {
+        printf("\nEscolha uma conversão:\n[ S ] - segundos\n[ M ] - minutos\n[ H ] - horas");
             printf("\nDigite sua opção: ");
             scanf(" %c", &tipo);
             if (tipo == 's'|| tipo == 'S' || tipo == 'm' || tipo == 'M' || tipo == 'h' || tipo == 'H')
